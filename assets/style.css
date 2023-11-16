@@ -1,42 +1,59 @@
 *,
 *::before,
 *::after {
-  margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Source Code Pro", monospace;
+}
+
 .container {
+  width: 600px;
   background-color: rgb(8, 8, 48);
-  border-radius: 9px;
-  height: 200px;
-  margin: 100px;
-  width: 500px;
-}
-
-h1,
-.top-text,
-.main-text {
-  padding: 10px 20px;
-}
-
-h1 {
   color: white;
-}
-
-.top-text {
-  color: rgb(121, 119, 119);
-}
-
-.main-text {
-  color: grey;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 100px auto 0;
 }
 
 button {
-  all: unset;
-  background-color: white;
-  border-radius: 6px;
-  border: 5px solio black;
-  height: 28px;
-  width: 74.5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.top-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  color: #808080;
+}
+
+.title {
+  margin: 16px 0;
+  text-transform: capitalize;
+}
+
+.main-text {
+  max-width: 60ch;
+  color: #808080;
+}
+
+.button {
+  background-color: #ffff;
+  color: #000;
+  border-radius: 9px;
+  font-weight: 700;
+  padding: 8px 16px;
+  margin-top: 16px;
 }
